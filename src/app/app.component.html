@@ -1,0 +1,24 @@
+
+
+<div>
+  <h1>我是最大的Component-appComponent</h1>
+  <h2>我接收到子组件app-zorror-btn传过来的值：{{childZorrorBtnMsg | json}}</h2>
+  <div>
+    <app-zorror-btn></app-zorror-btn>
+  </div>
+</div>
+<div id="edurpOnePage" style='background: #aae'>
+  <router-outlet></router-outlet>
+  <!-- <all-user-alert *ngIf="anData.allUserAlert.popShow"></all-user-alert> -->
+  <div class="anzhezhaocengLoad" [ngStyle]="{'display': anData.loading.loadingDisplay}">
+    <div class="anLoadingBar">
+      <div class="anLoadingBarScroll anLoadingBarBig">
+        <div></div>
+      </div>
+      <div class="anLoadingBarScroll anLoadingBarSmal">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <app-all-user-alert *ngIf="anData.allUserAlert.popShow"></app-all-user-alert>
+</div>
